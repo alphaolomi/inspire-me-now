@@ -74,7 +74,8 @@ export default function Home(props) {
   );
 }
 
-export async function getStaticProps() {
+
+export async function getServerSideProps(context) {
   const quote = quotes.random();
   return {
     props: {
@@ -82,12 +83,3 @@ export async function getStaticProps() {
     },
   };
 }
-
-
-export async function getInitialProps({ store, res })  {
-  if (res) {  
-      res.setHeader('Cache-Control', 'no-store');
-  }
-  await store.dispatch(action());
-  return {};
-};
