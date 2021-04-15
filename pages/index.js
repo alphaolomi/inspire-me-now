@@ -61,7 +61,7 @@ export default function Home(props) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by dwyl/quotes {"|"}
+          Powered by dwyl/quotes {"| "}
         </a>
         <a
           className="flex items-center justify-center"
