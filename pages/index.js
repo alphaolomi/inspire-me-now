@@ -19,10 +19,10 @@ export default function Home(props) {
         title="Inspire Me Now"
         description="Exceptional, curated qoutes to lift your day"
         openGraph={{
-          url: "https://inspire-me-now.vercel.com/",
+          url: "https://inspire-me-now.vercel.app/",
           title: "Inspire Me Now",
           description: "Exceptional, curated qoutes to lift your day",
-          images: [{ url: "https://inspire-me-now.vercel.com/cover.jpg" }],
+          images: [{ url: "https://inspire-me-now.vercel.app/cover.jpg" }],
         }}
       />
 
