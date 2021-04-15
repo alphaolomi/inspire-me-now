@@ -53,16 +53,21 @@ export default function Home(props) {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Made with ❤️ by @alphaolomi
+          Made with ❤️ by @alphaolomi {"|"}
         </a>
-
         <a
           className="flex items-center justify-center"
           href="https://github.com/dwyl/quotes"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by dwyl/quotes
+          Powered by dwyl/quotes {"|"}
+        </a>
+        <a
+          className="flex items-center justify-center"
+          href="https://github.com/alphaolomi/inspire-me-now"
+        >
+          <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Finspire-me-now.vercel.app&count_bg=%23CFCFCF&title_bg=%23A8A8A8&icon=&icon_color=%23E7E7E7&title=inspired&edge_flat=true" />
         </a>
       </footer>
     </div>
