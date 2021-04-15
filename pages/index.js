@@ -46,7 +46,7 @@ export default function Home(props) {
         </CopyToClipboard>
       </main>
 
-      <footer className="flex justify-center h-24 w-full space-x-3 border-t  visible md:invisible sm:invisible">
+      <footer className="flex justify-center h-24 w-full space-x-3 border-t">
         <a
           className="flex items-center justify-center"
           href="https://github.com/alphaolomi"
