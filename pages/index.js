@@ -1,7 +1,9 @@
 import Head from "next/head";
 import quotes from "quotesy";
+import { NextSeo } from "next-seo";
 import CopyToClipboard from "react-copy-to-clipboard";
 import { ToastContainer, toast } from "react-toastify";
+
 import "react-toastify/dist/ReactToastify.css";
 
 export default function Home(props) {
@@ -13,8 +15,19 @@ export default function Home(props) {
 
   return (
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
+      <NextSeo
+        title="Inspire Me Now"
+        description="Exceptional, curated qoutes to lift your day"
+        openGraph={{
+          url: "https://inspire-me-now.vercel.com/",
+          title: "Inspire Me Now",
+          description: "Exceptional, curated qoutes to lift your day",
+          images: [{ url: "https://inspire-me-now.vercel.com/cover.png" }],
+        }}
+      />
+
       <Head>
-        <title>Inspire Me Now</title>
+        <title>Inspire Me</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
@@ -33,23 +46,23 @@ export default function Home(props) {
         </CopyToClipboard>
       </main>
 
-      <footer className="flex items-center justify-center w-full h-24 border-t">
+      <footer className="flex justify-center h-24 w-full space-x-3 border-t  visible md:invisible sm:invisible">
         <a
           className="flex items-center justify-center"
           href="https://github.com/alphaolomi"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Made with ❤️ by @alphaolomi{"  | "}
+          Made with ❤️ by @alphaolomi
         </a>
-        {"  "}
+
         <a
           className="flex items-center justify-center"
           href="https://github.com/dwyl/quotes"
           target="_blank"
           rel="noopener noreferrer"
         >
-          {"  "}Powered by dwyl/quotes
+          Powered by dwyl/quotes
         </a>
       </footer>
     </div>
