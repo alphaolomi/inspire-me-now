@@ -82,3 +82,12 @@ export async function getStaticProps() {
     },
   };
 }
+
+
+export async function getInitialProps({ store, res })  {
+  if (res) {  
+      res.setHeader('Cache-Control', 'no-store');
+  }
+  await store.dispatch(action());
+  return {};
+};
