@@ -22,7 +22,7 @@ export default function Home(props) {
           url: "https://inspire-me-now.vercel.com/",
           title: "Inspire Me Now",
           description: "Exceptional, curated qoutes to lift your day",
-          images: [{ url: "https://inspire-me-now.vercel.com/cover.png" }],
+          images: [{ url: "https://inspire-me-now.vercel.com/cover.jpg" }],
         }}
       />
 
