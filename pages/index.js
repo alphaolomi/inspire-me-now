@@ -67,7 +67,12 @@ export default function Home(props) {
           className="flex items-center justify-center"
           href="https://github.com/alphaolomi/inspire-me-now"
         >
-          <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Finspire-me-now.vercel.app&count_bg=%23CFCFCF&title_bg=%23A8A8A8&icon=&icon_color=%23E7E7E7&title=inspired&edge_flat=true" />
+          <img src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Finspire-me-now.vercel.app&count_bg=%23CFCFCF&title_bg=%23A8A8A8&icon=&icon_color=%23E7E7E7&title=inspired&edge_flat=true" 
+            alt="inspired tag" 
+            width="120" 
+            height="15" 
+ 
+          />
         </a>
       </footer>
     </div>
