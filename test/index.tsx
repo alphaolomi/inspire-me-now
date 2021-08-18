@@ -16,7 +16,9 @@ import { RecoilRoot } from "recoil";
  * please visit https://testing-library.com/docs/react-testing-library/setup
  */
 
-export const AllTheProviders = ({ children }) => {
+ interface Props{children:JSX.Element }
+
+export const AllTheProviders :React.FC<Props> = ({ children }) => {
     const queryClient = new QueryClient();
 
     return (

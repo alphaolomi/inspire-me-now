@@ -9,12 +9,13 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import { AppContext } from "next/app";
 
-interface Qoute {
-    text: string;
-    author: string;
+interface HomepageProps {
+    quote: Quote
 }
 
-export async function getServerSideProps(context: AppContext) {
+
+
+export async function getServerSideProps(_context: AppContext):Promise<{props:HomepageProps}> {
     const quote = quotes.random();
     return {
         props: {
@@ -23,9 +24,6 @@ export async function getServerSideProps(context: AppContext) {
     };
 }
 
-interface HomepageProps {
-    quote: Quote
-}
 
 const Homepage: React.FC<HomepageProps> = ({ quote }) => {
     const notify = () =>
