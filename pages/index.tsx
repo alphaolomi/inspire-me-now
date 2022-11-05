@@ -66,7 +66,7 @@ const Homepage: React.FC<HomepageProps> = ({ quote }) => {
                                 {quote.text}
                                 <br />-
                                 <cite className="italic text-blue-600">
-                                    <a href={`https://www.google.com/search?q=${quote.author}`}  target="_blank" >
+                                    <a href={`https://www.google.com/search?q=${quote.author}`}  target="_blank" rel="noreferrer">
                                         {quote.author}
                                     </a>
                                 </cite>
